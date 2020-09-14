@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.3" />
+    <PackageReference Include="NServiceBus" Version="7.4.2" />
+    <PackageReference Include="NServiceBus.Persistence.AzureStorage" Version="2.4.0" />
+    <PackageReference Include="NServiceBus.Transport.AzureServiceBus" Version="1.5.0" />
+    <PackageReference Include="NServiceBus.UniformSession" Version="2.1.0" />
+    <PackageReference Include="NServiceBus.Extensions.Hosting" Version="1.1.0" />
+    <PackageReference Include="NServiceBus.Extensions.Logging" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Discord.Net.Core\Discord.Net.Core.csproj" />
+    <ProjectReference Include="..\Discord.Net.WebSocket\Discord.Net.WebSocket.csproj" />
+  </ItemGroup>
+
+</Project>
